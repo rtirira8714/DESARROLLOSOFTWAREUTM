@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Registro de Incidentes</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar Incidente</a></li>
+        <li><a href="tickets.html">Tickets Registrados</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section>
+
+<h2>Formulario de Soporte</h2>
+
+<form action="#" method="post">
+
+    <p>
+        <label for="nombre">Nombre del Usuario:</label>
+        <input type="text"
+               id="nombre"
+               name="nombre"
+               required>
+    </p>
+
+    <p>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email"
+               id="correo"
+               name="correo"
+               required>
+    </p>
+
+    <p>
+        <label for="categoria">Categoría del Incidente:</label>
+
+        <select id="categoria"
+                name="categoria"
+                required>
+
+            <option value="">
+                Seleccione una opcion
+            </option>
+
+            <option value="Errores de Facturación">
+                Errores de Facturación
+            </option>
+
+            <option value="Fallos en la plataforma">
+                Fallos en la plataforma
+            </option>
+
+            <option value="Problemas con la Firma Electrónica">
+                Problemas con la Firma Electrónica
+            </option>
+
+            <option value="Recuperación de Usuario y Contraseña">
+                Recuperación de Usuario y Contraseña
+            </option>
+
+        </select>
+    </p>
+
+    <fieldset>
+
+        <legend>Prioridad de Atención</legend>
+
+        <input type="radio"
+               id="alta"
+               name="prioridad"
+               value="alta"
+               required>
+
+        <label for="alta">Alta</label>
+
+        <input type="radio"
+               id="media"
+               name="prioridad"
+               value="media">
+
+        <label for="media">Media</label>
+
+        <input type="radio"
+               id="baja"
+               name="prioridad"
+               value="baja">
+
+        <label for="baja">Baja</label>
+
+    </fieldset>
+
+    <p>
+        <label for="descripcion">
+            Descripcion del problema:
+        </label>
+
+        <textarea id="descripcion"
+                  name="descripcion"
+                  rows="6"
+                  cols="50"
+                  required>
+        </textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar Ticket">
+        <input type="reset" value="Limpiar">
+    </p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Help Desk - Sistema de Facturación</p>
+    <img src="/LogoDataconta.png"
+         alt="Logo Help Desk Facturacion"
+         width="300">
+</footer>
+
+</body>
+</html>
