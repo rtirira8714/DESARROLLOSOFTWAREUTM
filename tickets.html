@@ -1,103 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets Registrados</title>
-
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Listado de Tickets</h1>
-</header>
+    <header>
+        <h1>Listado de Tickets</h1>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="reportar.html">Reportar Incidente</a></li>
-        <li><a href="tickets.html">Tickets Registrados</a></li>
-    </ul>
-</nav>
+        <img src="LogoDataconta.png"
+             alt="Logo Dataconta"
+             class="logo">
 
-<main>
-    <section>
-        <h2>Historial de Incidencias</h2>
+        <p>
+            Consulta general de incidencias registradas en el sistema Help Desk.
+        </p>
+    </header>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Usuario</th>
-                    <th>Categoría</th>
-                    <th>Prioridad</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Tickets Registrados</a></li>
+        </ul>
+    </nav>
 
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>Guillermo Rodríguez</td>
-                    <td>Errores de Facturación</td>
-                    <td>Alta</td>
-                    <td>Resuelto</td>
-                </tr>
+    <main class="contenedor">
 
-                <tr>
-                    <td>002</td>
-                    <td>Marlene Palacios</td>
-                    <td>Problemas con la Firma Electrónica</td>
-                    <td>Media</td>
-                    <td>En proceso</td>
-                </tr>
+        <section class="card">
 
-                <tr>
-                    <td>003</td>
-                    <td>Lorena Dávalos</td>
-                    <td>Recuperación de Usuario y Contraseña</td>
-                    <td>Baja</td>
-                    <td>Pendiente</td>
-                </tr>
+            <h2>Historial de Incidencias</h2>
 
-                <tr>
-                    <td>004</td>
-                    <td>Mariana Díaz</td>
-                    <td>Fallos en la plataforma</td>
-                    <td>Alta</td>
-                    <td>En proceso</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
+            <div class="tabla-responsive">
 
-<footer>
-    <p>
-        Sistema Help Desk - Gestión de Incidentes
-    </p>
+                <table>
+                    <caption>
+                        Tickets registrados del sistema Help Desk de facturación
+                    </caption>
 
-    <img src="/LogoDataconta.png"
-         alt="Logo Help Desk Facturacion"
-         width="300">
-</footer>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Categoría</th>
+                            <th>Prioridad</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Guillermo Rodríguez</td>
+                            <td>Errores de Facturación</td>
+                            <td>Alta</td>
+                            <td>Resuelto</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>Marlene Palacios</td>
+                            <td>Firma Electrónica</td>
+                            <td>Media</td>
+                            <td>En proceso</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Lorena Dávalos</td>
+                            <td>Recuperación de Usuario</td>
+                            <td>Baja</td>
+                            <td>Pendiente</td>
+                        </tr>
+
+                        <tr>
+                            <td>004</td>
+                            <td>Mariana Díaz</td>
+                            <td>Fallos en la Plataforma</td>
+                            <td>Alta</td>
+                            <td>En proceso</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Sistema Help Desk - Gestión de Incidentes
+        </p>
+
+        <img src="LogoDataconta.png"
+             alt="Logo Dataconta"
+             class="logo-footer">
+    </footer>
 
 </body>
 </html>

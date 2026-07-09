@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Desk Facturacion</title>
+    <title>Help Desk Facturación</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Sistema Help Desk de Facturación</h1>
+    <header>
+        <h1>Sistema Help Desk de Facturación</h1>
 
-    <p style="text-indent: 90px;"> 
-        <img src="/LogoDataconta.png"
-             alt="Logo Help Desk Facturacion"
-             width="300">
-    </p>
-    <p>
-        Plataforma para el registro y seguimiento de incidencias<br>
-        relacionadas con el sistema de facturación electrónica Dataconta.
-    </p>
-</header>
+        <img src="LogoDataconta.png"
+             alt="Logo Dataconta"
+             class="logo">
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="reportar.html">Reportar Incidente</a></li>
-        <li><a href="tickets.html">Tickets Registrados</a></li>
-    </ul>
-</nav>
+        <p>
+            Plataforma para el registro y seguimiento de incidencias relacionadas con
+            el sistema de facturación electrónica Dataconta.
+        </p>
+    </header>
 
-<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Tickets Registrados</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Bienvenido</h2>
+    <main class="dashboard">
 
-        <article>
-            <h3>Descripción del sistema</h3>
+        <article class="card">
+            <h2>Descripción del Sistema</h2>
+
             <p>
-                Este sistema permite registrar problemas relacionados con la emisión<br>
-                de facturas, errores del sistema y solicitudes de soporte para los usuarios.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Servicios Disponibles</h2>
-
-        <article>
-            <h3>Soporte para Facturación Electrónica</h3>
-            <p>
-                Realiza el registro de errores durante la generación o emisión<br>
-                de facturas electrónicas.
+                El sistema Help Desk permite registrar, monitorear y gestionar
+                incidencias relacionadas con la emisión de facturas electrónicas y el
+                soporte a usuarios.
             </p>
         </article>
 
-        <article>
-            <h3>Asistencia al Usuario</h3>
+        <article class="card">
+            <h2>Facturación Electrónica</h2>
+
             <p>
-                Encuentra guías, tutoriales y ayuda para utilizar correctamente<br>
-                el sistema de facturación electrónica.
+                Permite reportar errores durante la generación, autorización o emisión
+                de comprobantes electrónicos dentro del sistema de facturación.
             </p>
         </article>
 
-        <article>
-            <h3>Seguimiento de Incidentes</h3>
+        <article class="card">
+            <h2>Asistencia al Usuario</h2>
+
             <p>
-                Consulta el estado de tus tickets registrados y solicita atención<br>
-                inmediata y personalizada.
+                Brinda apoyo a los usuarios que necesitan orientación para utilizar
+                correctamente las funciones principales del sistema.
             </p>
         </article>
 
-    </section>
+        <article class="card">
+            <h2>Seguimiento de Tickets</h2>
 
-</main>
+            <p>
+                Facilita la consulta del estado de las incidencias registradas,
+                permitiendo verificar si están pendientes, en proceso o resueltas.
+            </p>
+        </article>
 
-<footer>
-    <p>
-        Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos<br>
-        2026 Copyright. Todos los derechos reservados.
-    </p>
-    <p style="text-indent: 90px;">
-        <img src="/LogoUTM.jpg"
-             alt="Logo UTM FCI"
-             width="250">
-    </p>         
-</footer>
+    </main>
+
+    <footer>
+        <p>
+            Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos
+        </p>
+
+        <img src="LogoUTM.jpg"
+             alt="Logo Universidad Técnica de Manabí"
+             class="logo-footer">
+    </footer>
 
 </body>
 </html>
