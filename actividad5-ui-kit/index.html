@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Kit - Help Desk Facturación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <img src="../LogoDataconta.png"
+             alt="Logo Dataconta"
+             class="logo">
+
+        <h1>UI Kit del Sistema Help Desk</h1>
+
+        <p>
+            Biblioteca de componentes visuales reutilizables para el sistema de gestión
+            de incidentes relacionado con facturación electrónica.
+        </p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="seccion">
+            <h2>Paleta de colores corporativa</h2>
+
+            <article class="grid-colores">
+                <div class="color-box color-primario">Primario</div>
+                <div class="color-box color-secundario">Secundario</div>
+                <div class="color-box color-exito">Éxito</div>
+                <div class="color-box color-error">Error</div>
+                <div class="color-box color-advertencia">Advertencia</div>
+            </article>
+        </section>
+
+        <section class="seccion">
+            <h2>Botones reutilizables</h2>
+
+            <article class="card">
+                <p>
+                    Los botones permiten ejecutar acciones importantes dentro del sistema,
+                    como enviar un ticket, cancelar una operación o eliminar un registro.
+                </p>
+
+                <button class="btn btn-primario">Botón Primario</button>
+                <button class="btn btn-secundario">Botón Secundario</button>
+                <button class="btn btn-peligro">Botón de Peligro</button>
+            </article>
+        </section>
+
+        <section class="seccion">
+            <h2>Formulario de ejemplo</h2>
+
+            <article class="card">
+                <form class="formulario">
+
+                    <label for="titulo">Título del incidente</label>
+                    <input type="text"
+                           id="titulo"
+                           name="titulo"
+                           placeholder="Ejemplo: Error al emitir factura"
+                           required>
+
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria"
+                            name="categoria"
+                            required>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="facturacion">Errores de facturación</option>
+                        <option value="firma">Firma electrónica</option>
+                        <option value="plataforma">Fallos en la plataforma</option>
+                    </select>
+
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion"
+                              name="descripcion"
+                              rows="5"
+                              placeholder="Describa el problema presentado"
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primario">Enviar</button>
+                    <button type="reset" class="btn btn-secundario">Limpiar</button>
+
+                </form>
+            </article>
+        </section>
+
+        <section class="seccion">
+            <h2>Tarjetas para tickets</h2>
+
+            <article class="grid-tarjetas">
+
+                <div class="card ticket-card">
+                    <span class="badge badge-alta">Prioridad Alta</span>
+                    <h3>Error en emisión de factura</h3>
+                    <p>
+                        El usuario reporta que el sistema no permite generar la factura
+                        electrónica después de ingresar los datos del cliente.
+                    </p>
+                    <button class="btn btn-primario">Revisar ticket</button>
+                </div>
+
+                <div class="card ticket-card">
+                    <span class="badge badge-media">Prioridad Media</span>
+                    <h3>Problema con firma electrónica</h3>
+                    <p>
+                        Se presenta una alerta al momento de validar el certificado de
+                        firma electrónica dentro del sistema.
+                    </p>
+                    <button class="btn btn-secundario">Ver detalle</button>
+                </div>
+
+                <div class="card ticket-card">
+                    <span class="badge badge-baja">Prioridad Baja</span>
+                    <h3>Consulta de uso del sistema</h3>
+                    <p>
+                        El usuario solicita orientación para consultar facturas generadas
+                        en días anteriores.
+                    </p>
+                    <button class="btn btn-secundario">Consultar</button>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="seccion">
+            <h2>Alertas del sistema</h2>
+
+            <article class="card">
+                <p class="alerta alerta-exito">
+                    Ticket registrado correctamente.
+                </p>
+
+                <p class="alerta alerta-advertencia">
+                    Revise los datos ingresados antes de enviar el formulario.
+                </p>
+
+                <p class="alerta alerta-error">
+                    No se pudo procesar la solicitud. Intente nuevamente.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>
+            Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos
+        </p>
+
+        <img src="../LogoUTM.jpg"
+             alt="Logo Universidad Técnica de Manabí"
+             class="logo-footer">
+    </footer>
+
+</body>
+</html>

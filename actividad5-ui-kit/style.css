@@ -1,0 +1,338 @@
+/* ==================================================
+   DESIGN SYSTEM - UI KIT HELP DESK FACTURACIÓN
+   Actividad 5 - CSS3 puro
+================================================== */
+
+/* Variables CSS corporativas */
+:root {
+    --color-primario: #0d6efd;
+    --color-primario-oscuro: #084298;
+    --color-secundario: #6c757d;
+    --color-exito: #198754;
+    --color-error: #dc3545;
+    --color-advertencia: #ffc107;
+    --color-fondo: #f4f7fb;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --color-borde: #d9dee7;
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radio-borde: 12px;
+    --tipografia-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modelo de cajas obligatorio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estructura general */
+body {
+    font-family: var(--tipografia-base);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-primario-oscuro));
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.encabezado h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.encabezado p {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Logos */
+.logo {
+    width: 280px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.logo-footer {
+    width: 180px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* Contenedor */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Secciones */
+.seccion {
+    margin-bottom: 35px;
+}
+
+.seccion h2 {
+    color: var(--color-primario-oscuro);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Paleta de colores */
+.grid-colores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.color-box {
+    color: var(--color-blanco);
+    padding: 25px;
+    border-radius: var(--radio-borde);
+    text-align: center;
+    font-weight: bold;
+    box-shadow: var(--sombra-suave);
+}
+
+.color-primario {
+    background: var(--color-primario);
+}
+
+.color-secundario {
+    background: var(--color-secundario);
+}
+
+.color-exito {
+    background: var(--color-exito);
+}
+
+.color-error {
+    background: var(--color-error);
+}
+
+.color-advertencia {
+    background: var(--color-advertencia);
+    color: #212529;
+}
+
+/* Tarjetas reutilizables */
+.card {
+    background: var(--color-blanco);
+    padding: 25px;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+    border: 1px solid var(--color-borde);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.ticket-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--color-primario-oscuro);
+}
+
+.ticket-card p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Grid de tarjetas */
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Botones reutilizables */
+.btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:focus {
+    outline: 3px solid rgba(13, 110, 253, 0.35);
+    outline-offset: 2px;
+}
+
+.btn-primario {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.btn-primario:hover {
+    background: var(--color-primario-oscuro);
+}
+
+.btn-secundario {
+    background: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.btn-secundario:hover {
+    background: #495057;
+}
+
+.btn-peligro {
+    background: var(--color-error);
+    color: var(--color-blanco);
+}
+
+.btn-peligro:hover {
+    background: #a71d2a;
+}
+
+/* Formularios */
+.formulario {
+    width: 100%;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Selector avanzado por tipo de atributo */
+.formulario input[type="text"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    font-family: inherit;
+    background: var(--color-blanco);
+}
+
+.formulario input[type="text"]:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.18);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Badges o etiquetas de prioridad */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge-alta {
+    background: rgba(220, 53, 69, 0.15);
+    color: var(--color-error);
+}
+
+.badge-media {
+    background: rgba(255, 193, 7, 0.25);
+    color: #856404;
+}
+
+.badge-baja {
+    background: rgba(25, 135, 84, 0.15);
+    color: var(--color-exito);
+}
+
+/* Alertas */
+.alerta {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.alerta-exito {
+    background: rgba(25, 135, 84, 0.15);
+    color: var(--color-exito);
+    border-left: 5px solid var(--color-exito);
+}
+
+.alerta-advertencia {
+    background: rgba(255, 193, 7, 0.25);
+    color: #856404;
+    border-left: 5px solid var(--color-advertencia);
+}
+
+.alerta-error {
+    background: rgba(220, 53, 69, 0.15);
+    color: var(--color-error);
+    border-left: 5px solid var(--color-error);
+}
+
+/* Pie de página */
+.pie {
+    background: #212529;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .encabezado h1 {
+        font-size: 1.7rem;
+    }
+
+    .contenedor {
+        width: 95%;
+    }
+
+    .grid-colores,
+    .grid-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 220px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .encabezado {
+        padding: 25px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .logo-footer {
+        width: 140px;
+    }
+}
